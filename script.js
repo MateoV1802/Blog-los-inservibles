@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggle.addEventListener('click', (e) => {
             e.stopPropagation();
             dropdown.classList.toggle('active');
-            
+
             // Toggle active aria state
             const isActive = dropdown.classList.contains('active');
             toggle.setAttribute('aria-expanded', isActive);
@@ -27,6 +27,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 toggle.setAttribute('aria-expanded', 'false');
                 toggle.focus();
             }
+        });
+    }
+});
+
+// Inicialización del slider de Slick
+$(document).ready(function () {
+    if ($('.slider').length) {
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                }
+            ]
         });
     }
 });
