@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades</title>
+    <title>Actividades - Los Inservibles</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="jquery-4.0.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../jquery-4.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +22,54 @@
             </ul>
         </div>
     </header>
-    <script src="script.js"></script>
+
+    <main class="content-wrapper">
+        <section class="activities-section">
+            <h1 class="main-title">Actividades y Locuras</h1>
+            <h2 class="sub-title">El historial de nuestro grupo</h2>
+
+            <!-- Barra de Filtros -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="Salidas">Salidas</button>
+                <button class="filter-btn" data-filter="Anecdotas">Anécdotas</button>
+            </div>
+
+            <!-- Contenedor de Tarjetas de Post -->
+            <div id="posts-container" class="posts-grid">
+                <!-- Se cargará dinámicamente con JS -->
+                <div class="loading-text">Cargando publicaciones...</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ventana Emergente (Modal) -->
+    <div id="post-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-img-wrap">
+                    <div id="modal-slider-container">
+                        <!-- Se poblará dinámicamente con un slider Slick o imagen única -->
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-meta">
+                        <span id="modal-category" class="post-category">Categoría</span>
+                        <span id="modal-date" class="post-date">Fecha</span>
+                    </div>
+                    <h2 id="modal-title" class="modal-title-text">Título del Post</h2>
+                    <p id="modal-author" class="modal-author">Escrito por: <span id="modal-author-name">Autor</span></p>
+                    <hr class="modal-divider">
+                    <div class="modal-scroll-area">
+                        <p id="modal-content" class="modal-text">Contenido detallado...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
 </body>
 
 </html>

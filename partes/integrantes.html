@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrantes</title>
+    <title>Integrantes - Los Inservibles</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="jquery-4.0.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../jquery-4.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -22,69 +22,106 @@
             </ul>
         </div>
     </header>
-    <main>
-        <section>
-            <h2>Integrantes</h2>
+
+    <main class="content-wrapper">
+        <section class="integrantes-section">
+            <h1 class="main-title">Nuestros Integrantes</h1>
+            <h2 class="sub-title">Haz clic en cualquiera para ver su información detallada</h2>
+            
             <div class="integrantes">
-                <div class="integrante sara">
-                    <img src="../imagenes/sara.jpeg" alt="Sara">
+                <div class="integrante sara" data-id="sara">
+                    <img src="../imagenes/Sara.jpeg" alt="Sara">
                     <h3>Sara</h3>
                     <p>Señorita white</p>
                 </div>
-                <div class="integrante mateo">
+                <div class="integrante mateo" data-id="mateo">
                     <img src="../imagenes/Mateo.jpeg" alt="Mateo">
                     <h3>Mateo</h3>
                     <p>El que hizo el blog</p>
                 </div>
-                <div class="integrante gyver">
+                <div class="integrante gyver" data-id="gyver">
                     <img src="../imagenes/Gyver.jpeg" alt="Gyver">
                     <h3>Gyver</h3>
                     <p>El negro</p>
                 </div>
-                <div class="integrante ana">
-                    <img src="../imagenes/Ana.jpeg" alt="Ana">
+                <div class="integrante ana" data-id="ana">
+                    <img src="../imagenes/ana.jpeg" alt="Ana">
                     <h3>Ana</h3>
                     <p>La que nunca viene</p>
                 </div>
-                <div class="integrante daniel">
+                <div class="integrante daniel" data-id="daniel">
                     <img src="../imagenes/Daniel.jpeg" alt="Daniel">
                     <h3>Daniel</h3>
                     <p>El que se cree el prota</p>
                 </div>
-                <div class="integrante felipe">
+                <div class="integrante felipe" data-id="felipe">
                     <img src="../imagenes/Felipe.jpeg" alt="Felipe">
                     <h3>Felipe</h3>
                     <p>Nate Jacobs Pripra tonjeo</p>
                 </div>
-                <div class="integrante avril">
+                <div class="integrante avril" data-id="avril">
                     <img src="../imagenes/Avril.jpeg" alt="Avril">
                     <h3>Avi</h3>
                     <p>La esclavizadora de sara</p>
                 </div>
-                <div class="integrante fabio">
+                <div class="integrante fabio" data-id="fabio">
                     <img src="../imagenes/Fabio.jpeg" alt="Fabio">
                     <h3>Fabio</h3>
-                    <p>Asegurador de problemas</p>
+                    <p>Adolf Hitler</p>
                 </div>
-                <div class="integrante nara">
+                <div class="integrante nara" data-id="nara">
                     <img src="../imagenes/Nara.jpeg" alt="Nara">
                     <h3>Nara</h3>
                     <p>La que dibuja</p>
                 </div>
-                <div class="integrante isabela">
+                <div class="integrante isabela" data-id="isabela">
                     <img src="../imagenes/Isa.jpeg" alt="Isabela">
                     <h3>Isa</h3>
                     <p>Princesa UwU kawaii</p>
                 </div>
-                <div class="integrante soto">
-                    <img src="../imagenes/Soto.jpeg" alt="Soto">
+                <div class="integrante soto" data-id="soto">
+                    <img src="../imagenes/soto.jpeg" alt="Soto">
                     <h3>Soto</h3>
                     <p>El mas god</p>
                 </div>
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+
+    <!-- Ventana Emergente (Modal de Integrante) -->
+    <div id="integrante-modal" class="modal-overlay">
+        <div class="modal-content integrante-modal-content">
+            <span class="modal-close" id="modal-integrante-close">&times;</span>
+            <div class="modal-body integrante-modal-body">
+                <div class="modal-img-wrap integrante-modal-img-wrap">
+                    <img id="modal-integrante-img" src="" alt="Integrante">
+                </div>
+                <div class="modal-info integrante-modal-info">
+                    <div class="modal-meta">
+                        <span id="modal-integrante-rol" class="integrante-badge">Rol</span>
+                    </div>
+                    <h2 id="modal-integrante-nombre" class="modal-title-text">Nombre</h2>
+                    <p class="modal-author">Apodo: <strong id="modal-integrante-apodo">Apodo</strong></p>
+                    <hr class="modal-divider">
+                    <div class="modal-scroll-area">
+                        <p id="modal-integrante-desc" class="modal-text"></p>
+                        
+                        <div class="modal-quote-box" id="modal-integrante-quote-box">
+                            <span class="modal-quote-label">Frase icónica:</span>
+                            <blockquote id="modal-integrante-frase" class="modal-quote"></blockquote>
+                        </div>
+
+                        <div class="modal-tags-section">
+                            <span class="modal-tags-label">Gustos y Hobbies:</span>
+                            <div id="modal-integrante-tags" class="modal-tags-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
 </body>
 
 </html>

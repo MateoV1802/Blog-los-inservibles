@@ -1,0 +1,179 @@
+[
+  {
+    "id": "sara",
+    "nombre": "Sara",
+    "apodo": "Señorita white",
+    "rol": "La Jefa / Coordinadora",
+    "descripcion": "en desarrollo...",
+    "frase": "en desarrollo...",
+    "gustos": [
+      "Fotografía",
+      "Organizar salidas",
+      "Música indie",
+      "Chismes de calidad"
+    ],
+    "color": "#e490fd",
+    "imagen": "imagenes/Sara.jpeg"
+  },
+  {
+    "id": "mateo",
+    "nombre": "Mateo",
+    "apodo": "El que hizo el blog",
+    "rol": "Webmaster & Creador",
+    "descripcion": "en desarrollo...",
+    "frase": "estoy en la miseria",
+    "gustos": [
+      "Programación",
+      "Diseño web",
+      "Videojuegos",
+      "Planes nocturnos",
+      "Metal",
+      "Bajo",
+      "Bateria",
+      "Volley"
+    ],
+    "color": "#ffffff",
+    "imagen": "imagenes/Mateo.jpeg"
+  },
+  {
+    "id": "gyver",
+    "nombre": "Gyver",
+    "apodo": "El negro",
+    "rol": "El Alma de la Fiesta",
+    "descripcion": "en desarrollo...",
+    "frase": "en desarrollo...",
+    "gustos": [
+      "Menores",
+      "Hacer reír",
+      "Comida callejera"
+    ],
+    "color": "#ff5100",
+    "imagen": "imagenes/Gyver.jpeg"
+  },
+  {
+    "id": "ana",
+    "nombre": "Ana",
+    "apodo": "La que nunca viene",
+    "rol": "Miembro Fantasma VIP",
+    "descripcion": "en desarrollo...",
+    "frase": "Armen plan(no va).",
+    "gustos": [
+      "Cancelar planes a última hora",
+      "Series",
+      "Café",
+      "K-pop / J-pop",
+      "BL"
+    ],
+    "color": "#5dccff",
+    "imagen": "imagenes/ana.jpeg"
+  },
+  {
+    "id": "daniel",
+    "nombre": "Daniel",
+    "apodo": "El que se cree el prota",
+    "rol": "Protagonista de Shonen",
+    "descripcion": "en desarrollo...",
+    "frase": "en desarrollo...",
+    "gustos": [
+      "Anime",
+      "Gimnasio",
+      "Debates intensos",
+      "Poses épicas"
+    ],
+    "color": "#ff1616",
+    "imagen": "imagenes/Daniel.jpeg"
+  },
+  {
+    "id": "felipe",
+    "nombre": "Felipe",
+    "apodo": "Nate Jacobs Pripra tonjeo",
+    "rol": "El Mayor de edad",
+    "descripcion": "en desarrollo...",
+    "frase": "en desarrollo...",
+    "gustos": [
+      "Moda",
+      "Trapear",
+      "Historias intensas",
+      "Música a todo volumen"
+    ],
+    "color": "#ffbb00",
+    "imagen": "imagenes/Felipe.jpeg"
+  },
+  {
+    "id": "avril",
+    "nombre": "Avril (Avi)",
+    "apodo": "La esclavizadora de sara",
+    "rol": "Comandante Suprema",
+    "descripcion": "en desarrollo...",
+    "frase": "Los odio a todos, no mentira chikos los amo.",
+    "gustos": [
+      "Maquillaje",
+      "Planes improvisados",
+      "Comprar en temu"
+    ],
+    "color": "#ff74c3",
+    "imagen": "imagenes/Avril.jpeg"
+  },
+  {
+    "id": "fabio",
+    "nombre": "Fabio",
+    "apodo": "Adolf Hitler",
+    "rol": "Peligro Nacional",
+    "descripcion": "¡Peligro nacional!, con cada frase que sale de su boca, es incapaz de evitar decir una barrabasada en la callez siendo capaz de que nos miren de las peores maneras solo por su presencia. \"El mejor amigo\" de los guardias de seguridad del plaza, que siempre que llega hay almenos uno vigilandolo.",
+    "frase": "Uyyyy paaaa.",
+    "gustos": [
+      "Humor pesado",
+      "Memes prohibidos",
+      "Videojuegos"
+    ],
+    "color": "#9900ff",
+    "imagen": "imagenes/Fabio.jpeg"
+  },
+  {
+    "id": "nara",
+    "nombre": "Nara",
+    "apodo": "La de la Nintendo comunitaria",
+    "rol": "Nintendo comunitaria",
+    "descripcion": "Poseedora de una nintendo switch que es mas del grupo que de ella, la cual tiene mas cuentas que los servidores de google, principal generadora de conflictos por la posesion de la consola",
+    "frase": "en desarrollo...",
+    "gustos": [
+      "Ilustración",
+      "Diseño",
+      "Anime",
+      "Música"
+    ],
+    "color": "#0a22ff",
+    "imagen": "imagenes/Nara.jpeg"
+  },
+  {
+    "id": "isabela",
+    "nombre": "Isabela (Isa)",
+    "apodo": "Princesa UwU kawaii",
+    "rol": "Representante Cute",
+    "descripcion": "en desarrollo...",
+    "frase": "en desarrollo...",
+    "gustos": [
+      "Cosas tiernas",
+      "Snacks dulces",
+      "Moda kawaii",
+      "Vocaloid"
+    ],
+    "color": "#ff7cba",
+    "imagen": "imagenes/Isa.jpeg"
+  },
+  {
+    "id": "soto",
+    "nombre": "Soto",
+    "apodo": "El mas god",
+    "rol": "Nivel Dios",
+    "descripcion": "Invencible, Valiente, Sensual, Misterioso, Encantador, Vigoroso, Diligente, Abrumador, Magnífico, Apasionado, Aterrador, Hermoso, Poderoso, Príncipe Gris Zote",
+    "frase": "en desarrollo...",
+    "gustos": [
+      "Ser god",
+      "Tranquilidad",
+      "Reírse de las desgracias del resto"
+    ],
+    "color": "#3b44b8",
+    "imagen": "imagenes/soto.jpeg"
+  }
+]

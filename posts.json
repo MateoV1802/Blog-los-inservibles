@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "titulo": "Post",
+    "fecha": "2026-08-01",
+    "autor": "Mateo",
+    "categoria": "Salidas",
+    "contenidoCorto": "informacion inicias",
+    "contenidoLargo": "informacion completa",
+    "imagen": "../imagenes/",
+    "imagenesAdicionales": []
+  }
+]
